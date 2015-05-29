@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+<script type="text/javascript" src="js/getElementsByClassName-1.0.1.js"></script>
+<script type="text/javascript" src="ovr/ovr.config.js"></script>
+<script type="text/javascript" src="ovr/ovr.js"></script>
+<link rel="stylesheet" type="text/css" href="ovr/ovr.css"/>
+
+<style type="text/css">
+.vr {
+	border: 10px solid black;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #000;
+}
+
+</style>
+
+</head>
+<body onload="OVR.init();" onresize="window.location.href = window.location.href;" onorientationchange="OVR.vrSliderFix();">
+<!--// Just put your image inside a DIV with the class "vr"  //-->
+<!--// add f-x (x=number of frames) if using more than eight //-->
+<div class="ovr f-64">
+	<img src="images/tablet_vr_00.jpg" />
+</div>
+</body>
+</html>
